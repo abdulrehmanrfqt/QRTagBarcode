@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dp_logo_com">
+
+    <ListView
+        android:id="@+id/PDFListView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp"
+        android:divider="#808080"
+        android:dividerHeight="0.5dp"
+        android:padding="5dp"
+        android:textSize="5dp">
+    </ListView>
+
+    <EditText
+        android:id="@+id/edtURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg_rounded_corners"
+        android:hint="ENTER TOUR"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#7B7B7B"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonOpenlink"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download" />
+
+
+</LinearLayout>

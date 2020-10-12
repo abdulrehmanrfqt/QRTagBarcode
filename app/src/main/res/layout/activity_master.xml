@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#282828">
+
+        <LinearLayout
+        android:id="@+id/refreshLayout"
+        android:longClickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/dp_logo_com">
+
+<!--        <TableLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:stretchColumns="*">-->
+<!--        </TableLayout>-->
+
+        <TextView
+            android:id="@+id/txtDenimPrive"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="#B3B3B3"
+            android:gravity="center"
+            android:text="Denim Privé"
+            android:longClickable="true"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <EditText
+            android:id="@+id/edttour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:hint="ENTER TOUR"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#7B7B7B"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/edtdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:hint="DATE"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:inputType="none"
+            android:maxLines="3"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#B7B7B7"
+            android:textSize="8dp"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/edtspinnerbag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:entries="@array/BAG"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:cursorVisible="false"
+            android:inputType="none"
+            android:padding="10dp"
+            android:maxLines="3"
+            android:minLines="2"
+            android:textColor="#000000"
+            android:textColorHint="#B7B7B7"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnadd"
+                android:text="ADD"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="3dp"
+            android:background="#9FF3F1F1"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="Tap to Scan QR Code"
+            android:inputType="none"
+            android:maxLines="3"
+            android:minLines="2"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHint="#B7B7B7"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/pbbar"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="#D3D3D3" />
+
+                <ListView
+                    android:id="@+id/myListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="5dp"
+                    android:divider="#808080"
+                    android:dividerHeight="0.5dp"
+                    android:padding="5dp">
+                </ListView>
+
+                <ListView
+                    android:id="@+id/PDFListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:divider="#808080"
+                    android:visibility="invisible"
+                    android:dividerHeight="0.5dp"
+                    android:padding="5dp">
+                </ListView>
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnShowPDF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="View PDF"
+            android:layout_marginTop="10dp"
+            />
+
+</RelativeLayout>
